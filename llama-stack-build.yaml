@@ -1,0 +1,25 @@
+version: '2'
+distribution_spec:
+  description: ''
+  container_image: null
+  providers:
+    inference:
+    - remote::anthropic
+    vector_io:
+    - inline::faiss
+    safety:
+    - inline::llama-guard
+    agents:
+    - inline::meta-reference
+    telemetry:
+    - inline::meta-reference
+    eval:
+    - inline::meta-reference
+    datasetio:
+    - inline::localfs
+    scoring:
+    - inline::basic
+    tool_runtime:
+    - inline::code-interpreter
+    - remote::model-context-protocol
+image_type: venv

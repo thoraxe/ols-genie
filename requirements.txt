@@ -1,3 +1,5 @@
 fastapi==0.115.12
 fastapi[standard]
 pydantic==2.10.6
+llama_stack_client==0.1.9
+prometheus-api-client==0.5.7
